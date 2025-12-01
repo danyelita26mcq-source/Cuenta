@@ -2,40 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Registro</title>
+  <title>Inicio de Sesión</title>
   <link rel="stylesheet" href="../css/estilos.css">
   <script defer src="../js/validaciones.js"></script>
   <script defer src="../js/auth.js"></script>
 </head>
 <body>
-  <h1>Registro de Usuario</h1>
+  <h1>Inicio de Sesión</h1>
 
-  <form id="formRegistro">
-    <label>Nombre completo:
-      <input type="text" id="nombre" required>
-    </label>
-
-    <label>Correo electrónico:
-      <input type="email" id="correo" required>
-    </label>
-
-    <label>Celular (Bolivia, 8 dígitos):
-      <input type="text" id="celular" required 
-             pattern="[678][0-9]{7}" 
-             title="Debe ser un número boliviano de 8 dígitos que empiece en 6, 7 o 8">
+  <form id="formLogin">
+    <label>Correo:
+      <input type="email" id="correoLogin" required>
     </label>
 
     <label>Contraseña:
-      <input type="password" id="clave" required>
-      <input type="checkbox" id="mostrarClave"> Mostrar
+      <input type="password" id="claveLogin" required>
+      <input type="checkbox" id="mostrarClaveLogin"> Mostrar
     </label>
 
-    <button type="submit">Registrar</button>
+    <button type="submit">Ingresar</button>
   </form>
 
-  <p id="mensaje"></p>
+  <p id="mensajeLogin"></p>
 
-  <a href="../login/index.html">Volver al login</a>
+  <a href="../registro/index.html">Crear cuenta</a> |
+  <a href="../recuperar/index.html">Recuperar contraseña</a>
 </body>
 </html>
 
