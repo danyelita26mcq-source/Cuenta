@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script defer src="../js/validaciones.js"></script>
+  <script defer src="../js/auth.js"></script>
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+
+  <form id="formRegistro">
+    <label>Nombre completo:
+      <input type="text" id="nombre" required>
+    </label>
+
+    <label>Correo electrónico:
+      <input type="email" id="correo" required>
+    </label>
+
+    <label>Celular (Bolivia, 8 dígitos):
+      <input type="text" id="celular" required 
+             pattern="[678][0-9]{7}" 
+             title="Debe ser un número boliviano de 8 dígitos que empiece en 6, 7 o 8">
+    </label>
+
+    <label>Contraseña:
+      <input type="password" id="clave" required>
+      <input type="checkbox" id="mostrarClave"> Mostrar
+    </label>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+  <a href="../login/index.html">Volver al login</a>
+</body>
+</html>
+
+
+
